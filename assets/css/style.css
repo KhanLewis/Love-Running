@@ -43,6 +43,7 @@ h2 {
     float: right;
     list-style-type: none;
     margin-right: 30px;
+    padding:20px;
 }
 
 #menu a {
