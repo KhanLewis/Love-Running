@@ -8,13 +8,12 @@
 
 body {
     font-family: Lato, sans-serif;
-    font: weight 300;
+    font-weight: 300;
     color: #3a3a3a;
 }
 
 /*Headings and logo */
-h1,
-h2 {
+h1, h2 {
     font-family: oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -30,12 +29,10 @@ h2 {
 /*navagation lists*/
 #menu {
     font-size: 110%;
-    list-style-type: none;
     letter-spacing: 4px;
 }
 
-#menu,
-#logo {
+#menu, #logo {
     line-height: 75px;
 }
 
@@ -60,7 +57,7 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*Hero image*/
+/*Hero image and cover text*/
 #hero-outer {
     height: 600px;
     width: 100%;
@@ -68,8 +65,7 @@ h2 {
     position: relative;
 }
 
-#cover-text,
-#cover-text h2 {
+#cover-text, #cover-text h2 {
     color: #fff;
 
 }
@@ -138,7 +134,7 @@ h2 {
 #center-about {
     width: 33%;
     margin: 0 auto;
-    ;
+    
 }
 
 hr {
@@ -206,7 +202,7 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
     width: 20%;
     height: 300px;
     float: left;
@@ -230,7 +226,7 @@ footer {
 
 }
 
-.social-networks>li {
+.social-networks > li {
     display: inline;
 }
 
@@ -249,12 +245,13 @@ footer {
     column-gap: 0;
 }
 
-#photos>img {
+#photos > img {
     width: 100%;
 }
+/*media queries*/
 
 /*For larger medium screens size from 1200px wide and down*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
@@ -266,8 +263,7 @@ footer {
         margin: 0;
     }
 
-    #left-about,
-    #right-about {
+    #left-about, #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -280,7 +276,44 @@ footer {
         float: left;
         padding: 0;
     }
+
     hr {
-        display:none;
+        display: none;
+    }
+}
+
+/*For medium sizes from 950px wide and down*/
+@media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+
     }
 }
